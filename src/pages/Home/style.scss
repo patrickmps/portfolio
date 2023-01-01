@@ -1,0 +1,88 @@
+body {
+  overflow-x: hidden;
+}
+
+.home {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 100%;
+
+    div {
+      width: auto;
+      height: auto;
+      margin: 0;
+      display: flex;
+      align-items: flex-start;
+
+      h2 {
+        color: #7b2cbf;
+        font-style: italic;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      button {
+        width: 12rem;
+        height: 2.5rem;
+        border-radius: 15px;
+        font-weight: 500;
+        color: #fff;
+        background-color: #7b2cbf;
+        border: none;
+        cursor: pointer;
+        transition: background-color .5s ease-out;
+
+        &:hover {
+          background-color: #5a189a;
+        }
+      }
+    }
+  }
+
+  h1 {
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .wave-container {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding-left: 2rem;
+
+    #wave {
+      margin: 10rem;
+      position: absolute;
+      z-index: -1;
+      filter: drop-shadow(-8px 0px 8px rgba(0, 0, 0, 0.1));
+      animation: WaveRotate 120s linear infinite;
+
+      @keyframes WaveRotate {
+        from {
+          transform: rotate(360deg);
+        }
+      }
+    }
+  }
+}

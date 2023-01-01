@@ -1,14 +1,18 @@
-import { useState } from 'react'
-import {Title} from './styles/styles'
-import GlobalStyle from './styles/global'
+import'./global.scss'
+import { Header } from './components/Header';
+import { ScocialButtons } from './components/SocialButtons';
+import { Home } from './pages/Home';
+import { About } from './pages/About';
 
 function App() {
   return (
     <div className='App'>
-      <GlobalStyle />
-      <Title>Portfólio</Title>
+      <Header/>
+      <Home/>
+      <About/>
+      <ScocialButtons/>
     </div>
   );
 }
 
-export default App
+export default App;

@@ -1,0 +1,21 @@
+import "./style.scss";
+import Wave from "../../assets/wave.svg";
+import HomeSelfie from "../../assets/home-selfie.png";
+
+export const Home = () => {
+  return (
+    <section className="home">
+      <div>
+        <h1>Patrick Mota</h1>
+        <div>
+          <h2>Dev Front-end</h2>
+          <button>Entre em contato</button>
+        </div>
+      </div>
+      <div className="wave-container">
+        <img src={HomeSelfie} alt="" />
+        <img src={Wave} alt="" id="wave" />
+      </div>
+    </section>
+  );
+};
