@@ -11,14 +11,14 @@
   backdrop-filter: blur(2px) saturate(172%);
   -webkit-backdrop-filter: blur(2px) saturate(172%);
   background: rgba(21, 21, 21, 0.089);
-  border: 1px solid #181818;
+  border: 1px solid var(--black-700);
 
 
   svg {
     width: 2.2rem;
     height: 2.2rem;
     margin: 0 0.5rem 0 0.5rem;
-    fill: #5a189a;
+    fill: var(--purple-800);
     filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
     cursor: pointer;
     transition: all .3s ease-in-out;

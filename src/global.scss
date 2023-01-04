@@ -1,3 +1,16 @@
+:root {
+  --font-title: 'Montserrat', sans-serif;
+  --font-paragraph: 'Open Sans', sans-serif;
+
+  --purple-600: #7b2cbf;
+  --purple-800: #5a189a;
+
+  --black-600: #181818;
+  --black-700: #151515;
+  --black-900: #121212;
+
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -6,11 +19,17 @@
 
 body {
 	background: url('./assets/Web.svg');
-	font-family: 'Montserrat', sans-serif;
+	font-family: var(--font-title);
+  overflow-x: hidden;
 }
 
+// html {
+//   scroll-snap-type: y mandatory;
+// }
+
 section {
-  height: 100vw;
+  height: 100vh;
+  // scroll-snap-align: center;
 }
 
 @media (max-width: 1080px) {

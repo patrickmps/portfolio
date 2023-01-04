@@ -7,7 +7,7 @@ export const ScocialButtons = () => {
       <FaGithub/>
       <FaLinkedin/>
       <FaInstagram/>
-      {/* <FaFacebook/> */}
+      <FaFacebook/>
     </div>
   );
 }
