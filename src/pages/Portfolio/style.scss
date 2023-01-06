@@ -1,0 +1,18 @@
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  padding: 8rem 0 0 10rem;
+
+  #projects {
+    width: fit-content;
+    // box-shadow: inset 5px 5px 10px var(--black-600);
+    // overflow-y: scroll;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-auto-flow: row;
+    row-gap: 2rem;
+    column-gap: 2rem;
+    align-items: flex-start;
+    justify-content: start;
+  }
+}

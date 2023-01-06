@@ -1,22 +1,12 @@
 .about {
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: center;
-
-  .content {
-    width: 50%;
-    align-items: center;
-    justify-content: center;
-    padding-left: 10rem;
-
-    h1{
-      color: #fff;
-      font-size: 1.6rem;
-      font-weight: 600;
-      font-style: italic;
-    }
-
+  padding: 10rem 0 0 10rem;
+  
+  #content {
+    width: 40%;
+    
     h2 {
       font-size: 2.3rem;
       color: #fff;
@@ -34,19 +24,25 @@
       font-weight: 400;
       font-size: 1.2rem;
       line-height: 1.5rem;
+      margin-bottom: 0.5rem;
     }
   }
 
   #skills {
-    width: 50%;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto;
-    row-gap: 1rem;
-    column-gap: 1rem;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 60%;
+    padding-left: 10rem;
 
-    align-items: center;
-    justify-content: center;
+    #skills-grid {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-template-rows: auto auto;
+      row-gap: 1rem;
+      column-gap: 1rem;
+      align-items: flex-start;
+      justify-content: center;
+    }
   }
 }

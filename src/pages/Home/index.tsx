@@ -1,10 +1,11 @@
 import "./style.scss";
 import Wave from "../../assets/wave.svg";
+import Wave2 from "../../assets/wave2.svg";
 import HomeSelfie from "../../assets/home-selfie.png";
 
 export const Home = () => {
   return (
-    <section className="home">
+    <section className="home" id="home">
       <div>
         <h1>Patrick Mota</h1>
         <div>
@@ -15,6 +16,7 @@ export const Home = () => {
       <div className="wave-container">
         <img src={HomeSelfie} alt="" />
         <img src={Wave} alt="" id="wave" />
+        <img src={Wave2} alt="" id="wave-2" />
       </div>
     </section>
   );

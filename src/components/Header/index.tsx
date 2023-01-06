@@ -8,10 +8,10 @@ export const Header = () => {
 
       <img src={Logo} alt="" />
       <nav>
-        <a href="#">home</a>
-        <a href="#">sobre</a>
-        <a href="#">portfólio</a>
-        <a href="#">contato</a>
+        <a href="#home">home</a>
+        <a href="#about">sobre</a>
+        <a href="#portfolio">portfólio</a>
+        <a href="#contact">contato</a>
       </nav>
 
     </div>

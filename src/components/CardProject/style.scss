@@ -1,0 +1,65 @@
+.card-project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 18.75rem;
+  height: 21.875rem;
+  border-radius: 10px;
+  background: rgba(24, 24, 24, 0.2);
+  border: 2px solid var(--black-600);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  box-shadow: -5px 4px 4px rgba(0, 0, 0, 0.25);
+
+  > div {
+    margin-top: 1.25rem;
+    width: 16.25rem;
+    height: 10.625rem;
+    border-radius: 10px;
+    background-color: #494949;
+  }
+
+  > h1 {
+    margin: 0;
+    width: 100%;
+    padding: 0.5rem 0 0 1.25rem;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+
+  > p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    margin: 0;
+    width: 100%;
+    height: 4.063rem;
+    padding: 0.5rem 1.25rem 0 1.25rem;
+    color: #fff;
+    font-family: var(--font-paragraph);
+    font-weight: 400;
+    font-size: 0.75rem;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 4;
+    white-space: pre-wrap;
+    overflow: hidden;
+  }
+
+  > a {
+    align-self: flex-start;
+    margin: 0.5rem 0 0 1.25rem;
+    button {
+      width: 6rem;
+      height: 2rem;
+      background-color: var(--purple-600);
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+
+      svg {
+        width: 1.8rem;
+        height: 1.8rem;
+      }
+    }
+  }
+}

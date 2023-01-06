@@ -77,16 +77,29 @@
     }
 
     #wave {
-      width: 70%;
-      margin: 10rem;
+      width: 150%;
       position: absolute;
       z-index: -1;
       filter: drop-shadow(-8px 0px 8px rgba(0, 0, 0, 0.1));
-      animation: WaveRotate 120s linear infinite;
+      animation: WaveTranslate 30s linear infinite alternate;
 
-      @keyframes WaveRotate {
+      @keyframes WaveTranslate {
         from {
-          transform: rotate(360deg);
+          transform: translate(25vh, 25vw)
+        }
+      }
+    }
+
+    #wave-2 {
+      width: 140%;
+      position: absolute;
+      z-index: -2;
+      filter: drop-shadow(-8px 0px 8px rgba(0, 0, 0, 0.1));
+      animation: WaveTranslate-2 30s linear infinite alternate-reverse;
+
+      @keyframes WaveTranslate-2 {
+        from {
+          transform: translate(25vh, 25vw)
         }
       }
     }
