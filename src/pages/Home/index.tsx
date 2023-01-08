@@ -15,8 +15,8 @@ export const Home = () => {
       </div>
       <div className="wave-container">
         <img src={HomeSelfie} alt="" />
-        <img src={Wave} alt="" id="wave" />
-        <img src={Wave2} alt="" id="wave-2" />
+        <img src={Wave} alt="" className="wave" />
+        <img src={Wave2} alt="" className="wave-2" />
       </div>
     </section>
   );

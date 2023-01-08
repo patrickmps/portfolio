@@ -1,5 +1,15 @@
+$tablet-size: 768px;
+$laptop-small-size: 1024px;
+$desktop-size: 1366px;
+
 .contact {
   display: flex;
   flex-direction: column;
-  padding: 8rem 0 0 10rem;
+  padding: 8rem 0 0 2rem;
+}
+
+@media screen and (min-width: $laptop-small-size) {
+  .contact {
+    padding: 10rem 0 0 10rem;
+  }
 }

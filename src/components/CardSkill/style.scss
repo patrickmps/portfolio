@@ -8,13 +8,11 @@
   border-radius: 10px;
   background: rgba(24, 24, 24, 0.2);
   border: 2px solid var(--black-600);
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
 
   svg {
     height: 5rem;
     width: 5rem;
-
+    
     transition: transform .3s ease-out, filter .5s ease-out;
   }
 

@@ -51,7 +51,7 @@ export const About = () => {
       <div id="skills">
         <TitleSection title="Tecnologias"/>
         <div id="skills-grid">
-          {skills.map(skill =>  <CardSkill icon={skill.icon} name={skill.name} />)}
+          {skills.map(skill =>  <CardSkill key={skill.name} icon={skill.icon} name={skill.name} />)}
         
         </div>
       </div>

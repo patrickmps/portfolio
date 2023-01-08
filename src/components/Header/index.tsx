@@ -1,19 +1,51 @@
-import './style.scss'
-import Logo from '../../assets/logo.svg'
+import "./style.scss";
+import Logo from "../../assets/logo.svg";
+import { useEffect } from "react";
 
 export const Header = () => {
   
+  useEffect(() => {
+    const hamburguerMenu = document.querySelector(".hamburguer-menu");
+    const navMenu = document.querySelector(".nav-menu");
+
+    hamburguerMenu?.addEventListener("click", () => {
+      hamburguerMenu.classList.toggle("active");
+      navMenu?.classList.toggle("active");
+    });
+
+    document.querySelectorAll(".nav-link").forEach(link => link.addEventListener("click", () => {
+      hamburguerMenu?.classList.remove("active");
+      navMenu?.classList.remove("active");
+    }));
+
+  }), [];
+
   return (
-    <div className='header-container'>
-
+    <header className="header-container">
       <img src={Logo} alt="" />
-      <nav>
-        <a href="#home">home</a>
-        <a href="#about">sobre</a>
-        <a href="#portfolio">portfólio</a>
-        <a href="#contact">contato</a>
-      </nav>
 
-    </div>
+      <nav className="nav-menu">
+        <ul>
+          <li>
+            <a className="nav-link" href="#home">home</a>
+          </li>
+          <li>
+            <a className="nav-link" href="#about">sobre</a>
+          </li>
+          <li>
+            <a className="nav-link" href="#portfolio">portfólio</a>
+          </li>
+          <li>
+            <a className="nav-link" href="#contact">contato</a>
+          </li>
+        </ul>
+
+        <div className="hamburguer-menu">
+          <span id="bar"></span>
+          <span id="bar"></span>
+          <span id="bar"></span>
+        </div>
+      </nav>
+    </header>
   );
-}
+};
