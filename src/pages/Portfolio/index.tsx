@@ -8,7 +8,7 @@ export const Portfolio = () => {
     <section className="portfolio" id="portfolio">
       <TitleSection title="Portfólio" />
       <div id="projects">
-        <CardProject linkGitHub="https://github.com/patrickmps/portfolio" img={portfolioImage} desc={"Em breve vários projetos para compor o portfólio."} titulo="Em breve"  />
+        <CardProject linkGitHub="https://github.com/patrickmps/portfolio" img={portfolioImage} desc={"Em breve vários projetos para compor o portfólio."} titulo="Em breve" />
       </div>
     </section>
   );
