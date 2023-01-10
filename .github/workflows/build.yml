@@ -15,7 +15,7 @@ jobs:
           node-version: '14.x'
       - name: Build web-app
         run: |
-          yarn ci
+          yarn install
           yarn run build
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
