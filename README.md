@@ -2,8 +2,8 @@
 
 # ⚡Patrick Mota - Portfólio
 <div style="display: inline-block;">
- <img height="500em" src="https://user-images.githubusercontent.com/58093259/211448419-995eb5f9-8924-4118-bae4-c7d9ebbb708b.png" />
- <img height="550em"" src="https://user-images.githubusercontent.com/58093259/211448466-9bf82dfb-1446-4e94-b87f-a8399e70db38.png" />
+ <img height="350em" src="https://user-images.githubusercontent.com/58093259/211448419-995eb5f9-8924-4118-bae4-c7d9ebbb708b.png" />
+ <img height="350em"" src="https://user-images.githubusercontent.com/58093259/211448466-9bf82dfb-1446-4e94-b87f-a8399e70db38.png" />
 </div>
 
 ## Template
