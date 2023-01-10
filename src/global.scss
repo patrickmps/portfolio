@@ -10,8 +10,6 @@
   --black-900: #121212;
 }
 
-
-
 * {
 	margin: 0;
 	padding: 0;
@@ -19,7 +17,7 @@
 }
 
 body {
-	background: url('./assets/Web.svg');
+	background: url('./assets/background.svg');
 	font-family: var(--font-title);
   overflow-x: hidden;
 }

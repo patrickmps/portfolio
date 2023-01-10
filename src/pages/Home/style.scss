@@ -46,12 +46,14 @@ $desktop-size: 1366px;
         font-weight: 500;
         color: #fff;
         background-color: var(--purple-600);
+        box-shadow: 3px 5px 10px rgb(0 0 0 / 0.4);
         border: none;
         cursor: pointer;
-        transition: background-color 0.5s ease-out;
+        transition: all 0.3s ease-out;
 
         &:hover {
-          background-color: var(--purple-800);
+          filter: drop-shadow(0px 0px 10px var(--purple-800));
+          transform: scale(1.1);
         }
       }
     }
@@ -96,15 +98,39 @@ $desktop-size: 1366px;
       }
     }
   }
+
+  #arrow-scroll {
+    position: fixed;
+    width: 3rem;
+    height: 3rem;
+    bottom: 3.5rem;
+    left: 60%;
+    color: var(--purple-800);
+    animation: arrowScroll 1s cubic-bezier(.02,.4,0,.79) infinite alternate;
+
+    @keyframes arrowScroll {
+      from {
+        transform: translateY(1.5rem);
+      }
+    }
+  }
 }
 
 @media screen and (min-width: $tablet-size) {
-  .wave {
-    top: -25% !important;
+  .home{
+    #arrow-scroll {
+      left: 50%; 
+    }
+    .wave-container {
+      .wave {
+        top: -25%;
+      }
+      .wave-2 {
+        top: -25%;
+      }
+    }
   }
-  .wave-2 {
-    top: -25% !important;
-  }
+  
 }
 
 @media screen and (min-width: $laptop-small-size) {
@@ -149,11 +175,11 @@ $desktop-size: 1366px;
 
       .wave {
         width: 200%;
-        top: -12% !important;
+        top: -12%;
       }
       .wave-2 {
         width: 200%;
-        top: -12% !important;
+        top: -12%;
       }
     }
   }
@@ -164,11 +190,11 @@ $desktop-size: 1366px;
     .wave-container {
       .wave {
         width: 200%;
-        top: -30% !important;
+        top: -30%;
       }
       .wave-2 {
         width: 200%;
-        top: -30% !important;
+        top: -30%;
       }
     }
   }

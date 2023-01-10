@@ -8,16 +8,10 @@ export const Header = () => {
     const hamburguerMenu = document.querySelector(".hamburguer-menu");
     const navMenu = document.querySelector(".nav-menu");
 
-    hamburguerMenu?.addEventListener("click", () => {
-      hamburguerMenu.classList.toggle("active");
-      navMenu?.classList.toggle("active");
-    });
-
     document.querySelectorAll(".nav-link").forEach(link => link.addEventListener("click", () => {
       hamburguerMenu?.classList.remove("active");
       navMenu?.classList.remove("active");
     }));
-
   }), [];
 
   return (
@@ -40,7 +34,12 @@ export const Header = () => {
           </li>
         </ul>
 
-        <div className="hamburguer-menu">
+        <div onClick={() => {
+          const hamburguerMenu = document.querySelector(".hamburguer-menu");
+          const navMenu = document.querySelector(".nav-menu");
+          hamburguerMenu?.classList.toggle("active");
+          navMenu?.classList.toggle("active");
+        }} className="hamburguer-menu">
           <span id="bar"></span>
           <span id="bar"></span>
           <span id="bar"></span>

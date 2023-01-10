@@ -15,17 +15,19 @@ $laptop-small-size: 1024px;
   background: rgba(21, 21, 21, 0.089);
   border: 2px solid var(--black-700);
 
-  svg {
-    width: 2.2rem;
-    height: 2.2rem;
-    fill: var(--purple-800);
-    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
-    cursor: pointer;
-    transition: all .3s ease-in-out;
+  a {
+    svg {
+      width: 2.2rem;
+      height: 2.2rem;
+      fill: var(--purple-800);
+      filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
 
-    &:hover {
-      transform: scale(1.2);
-      fill: var(--purple-600);
+      &:hover {
+        transform: scale(1.2);
+        fill: var(--purple-600);
+      }
     }
   }
 }

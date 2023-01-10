@@ -13,8 +13,16 @@
     margin-top: 1.25rem;
     width: 16.25rem;
     height: 10.625rem;
-    border-radius: 10px;
+    border-radius: 11px;
     background-color: #494949;
+    
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+    }
   }
 
   > h1 {
@@ -55,8 +63,8 @@
       cursor: pointer;
 
       svg {
-        width: 1.8rem;
-        height: 1.8rem;
+        width: 2rem;
+        height: 2rem;
       }
     }
   }
