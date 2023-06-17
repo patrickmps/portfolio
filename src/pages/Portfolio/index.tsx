@@ -1,6 +1,6 @@
 import { CardProject } from "../../components/CardProject";
 import { TitleSection } from "../../components/TitleSection";
-import portfolioImage from "../../assets/portfolio.jpg";
+import data from "./projects.json";
 import "./style.scss";
 
 export const Portfolio = () => {
@@ -8,7 +8,15 @@ export const Portfolio = () => {
     <section className="portfolio" id="portfolio">
       <TitleSection title="Portfólio" />
       <div id="projects">
-        <CardProject linkGitHub="https://github.com/patrickmps/portfolio" img={portfolioImage} desc={"Em breve vários projetos para compor o portfólio."} titulo="Em breve" />
+        {data.projects.map((project) => (
+          <CardProject
+            key={project.title}
+            linkGitHub={project.links.github}
+            title={project.title}
+            desc={project.description}
+            img={project.img}
+          />
+        ))}
       </div>
     </section>
   );

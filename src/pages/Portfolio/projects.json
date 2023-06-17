@@ -1,0 +1,20 @@
+{
+  "projects": [
+    {
+      "title": "Portfólio",
+      "links": {
+        "github": "https://github.com/patrickmps/portfolio"
+      },
+      "img": "/imgs/portfolio.jpg",
+      "description": "Meu portfólio é um projeto em ReactJS que reflete minha paixão pela programação e design de interfaces. Com uma abordagem moderna e responsiva, criei um espaço cativante onde posso exibir meu trabalho de forma elegante e acessível."
+    },
+    {
+      "title": "Floricultura API",
+      "links": {
+        "github": "https://github.com/patrickmps/Floricultura"
+      },
+      "img": "/imgs/floricultura-api.png",
+      "description": "Primeira API que desenvolvi, utilizando a linguagem Dart com o Shelf, para um trabalho da disciplina de Integração de Sistemas no curso de Sistemas de informação. Foi uma experiência desafiadora e que agregou muito ao meu conhecimento. Nesse trabalho pude entender como funciona uma API e sobre a arquitetura em camadas."
+    }
+  ]
+}
