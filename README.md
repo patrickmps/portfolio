@@ -1,6 +1,8 @@
 <img height="50em" align="right" src="https://user-images.githubusercontent.com/58093259/211449637-11b770e8-daa8-46c6-b695-8c6518407ccc.svg" />
 
 # ⚡Patrick Mota - Portfólio
+Meu portfólio é um projeto em ReactJS que reflete minha paixão pela programação e design de interfaces. Com uma abordagem moderna e responsiva, criei um espaço cativante onde posso exibir meu trabalho de forma elegante e acessível.
+
 <div style="display: inline-block;">
  <img height="350em" src="https://user-images.githubusercontent.com/58093259/211448419-995eb5f9-8924-4118-bae4-c7d9ebbb708b.png" />
  <img height="350em"" src="https://user-images.githubusercontent.com/58093259/211448466-9bf82dfb-1446-4e94-b87f-a8399e70db38.png" />
