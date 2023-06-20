@@ -106,6 +106,7 @@ $laptop-small-size: 1024px;
       box-shadow: 0 0 40px var(--purple-800);
       height: 32rem;
       > p {
+        display: block;
         height: 12rem;
       }
       //transform: scale(1.01);
