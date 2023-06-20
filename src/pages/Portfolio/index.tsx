@@ -12,6 +12,7 @@ export const Portfolio = () => {
           <CardProject
             key={project.title}
             linkGitHub={project.links.github}
+            linkDemo={project.links.demo}
             title={project.title}
             desc={project.description}
             img={project.img}

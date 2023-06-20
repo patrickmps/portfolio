@@ -6,6 +6,7 @@ interface CardProjectProps {
   desc: string;
   img: string;
   linkGitHub: string;
+  linkDemo?: string;
 }
 
 export const CardProject = ({
@@ -13,6 +14,7 @@ export const CardProject = ({
   desc,
   img,
   linkGitHub,
+  linkDemo,
 }: CardProjectProps) => {
   return (
     <div className="card-project">
@@ -21,12 +23,20 @@ export const CardProject = ({
       </div>
       <h1>{title}</h1>
       <p>{desc}</p>
-      <a href={linkGitHub} target="_blank">
+      <div id="btn-links">
+        <a href={linkGitHub} target="_blank">
+          <button>
+            <DiGithubAlt color="#fff" />
+            <DiGithubFull color="#fff" />{" "}
+          </button>
+        </a>
+        {linkDemo ?
+        <a href={linkDemo} target="_blank">
         <button>
-          <DiGithubAlt color="#fff" />
-          <DiGithubFull color="#fff" />{" "}
+          Demo
         </button>
-      </a>
+            </a> : null}
+      </div>
     </div>
   );
 };
