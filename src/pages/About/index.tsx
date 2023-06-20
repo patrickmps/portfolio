@@ -1,6 +1,6 @@
 import { CardSkill } from "../../components/CardSkill";
 import "./style.scss";
-import { DiJsBadge, DiCss3, DiHtml5, DiReact, DiSass } from "react-icons/di";
+import { DiJsBadge, DiCss3, DiHtml5, DiReact, DiSass, DiLaravel } from "react-icons/di";
 import { TitleSection } from "../../components/TitleSection";
 
 export const About = () => {
@@ -24,7 +24,7 @@ export const About = () => {
     {
       icon: <DiReact color="#61dafb" />,
       name: "ReactJS",
-    },
+    }
   ];
 
   return (

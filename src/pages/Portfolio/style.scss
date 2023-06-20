@@ -1,11 +1,13 @@
-$tablet-size: 768px;
+$tablet-size: 640px;
 $laptop-small-size: 1024px;
-$desktop-size: 1366px;
+$laptop-medium-size: 1180px;
+$desktop-size: 1520px;
 
 .portfolio {
   display: flex;
   flex-direction: column;
   padding: 8rem 0 0 2rem;
+  height: max-content;
 
   #projects {
     width: fit-content;
@@ -25,12 +27,25 @@ $desktop-size: 1366px;
       grid-template-columns: auto auto;
       grid-auto-flow: row;
     }
-  } 
+  }
 }
 
 @media screen and (min-width: $laptop-small-size) {
+
   .portfolio {
-    padding-left:10rem;
+    padding-left: 10rem;
+    height: max-content;
+    #projects {
+      grid-template-columns: auto auto;
+      grid-auto-flow: row;
+    }
+  }
+}
+@media screen and (min-width: $laptop-medium-size) {
+
+  .portfolio {
+    padding-left: 10rem;
+    height: max-content;
     #projects {
       grid-template-columns: auto auto auto;
       grid-auto-flow: row;
