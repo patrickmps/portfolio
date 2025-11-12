@@ -1,16 +1,15 @@
+import { FaLinkedin, FaRegEnvelope } from "react-icons/fa";
 import { ContactTag } from "../../components/ContactTag";
 import { TitleSection } from "../../components/TitleSection";
 import "./style.scss";
-import { FaRegEnvelope, FaLinkedin } from "react-icons/fa";
 
 export const Contact = () => {
   return (
     <section className="contact" id="contact">
       <TitleSection title="Contato" />
       <p>
-        Entre em contato através do e-mail ou Linkedin, irei responder o mais
-        breve possível! Caso queira ter uma conversa mais informal é só me
-        chamar no Telegram.
+        Entre em contato através do e-mail ou LinkedIn. Irei responder o mais
+        breve possível!
       </p>
       <div className="contacts">
         <ContactTag

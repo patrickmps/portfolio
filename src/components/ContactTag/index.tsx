@@ -1,5 +1,6 @@
+import { JSX } from "react";
+import { FaLink, FaRegClipboard } from "react-icons/fa";
 import "./style.scss";
-import { FaRegClipboard, FaLink } from "react-icons/fa";
 
 interface ContactTagProps {
   icon: JSX.Element;
@@ -17,7 +18,7 @@ export const ContactTag = ({ icon, text, btnType, href }: ContactTagProps) => {
       },
       () => {
         alert("Não foi possível copiar.");
-      }
+      },
     );
   }
 
@@ -30,7 +31,7 @@ export const ContactTag = ({ icon, text, btnType, href }: ContactTagProps) => {
         </p>
       </span>
       {btnType === "clipboard" ? (
-        <a onClick={Clipboard} >
+        <a onClick={Clipboard}>
           <FaRegClipboard />
         </a>
       ) : (

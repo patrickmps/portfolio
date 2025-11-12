@@ -1,24 +1,42 @@
 import { CardProject } from "../../components/CardProject";
 import { TitleSection } from "../../components/TitleSection";
-import data from "./projects.json";
+import { useGitHubRepos } from "../../hooks/useGitHubRepos";
 import "./style.scss";
 
 export const Portfolio = () => {
+  const { projects, loading, error } = useGitHubRepos();
+
   return (
     <section className="portfolio" id="portfolio">
       <TitleSection title="Portfólio" />
-      <div id="projects">
-        {data.projects.map((project) => (
-          <CardProject
-            key={project.title}
-            linkGitHub={project.links.github}
-            linkDemo={project.links.demo}
-            title={project.title}
-            desc={project.description}
-            img={project.img}
-          />
-        ))}
-      </div>
+      {loading && (
+        <div className="loading-message">
+          <p>Carregando projetos do GitHub...</p>
+        </div>
+      )}
+      {error && (
+        <div className="error-message">
+          <p>Erro ao carregar projetos: {error}</p>
+        </div>
+      )}
+      {!loading && !error && (
+        <div id="projects">
+          {projects.length === 0 ? (
+            <p>Nenhum projeto encontrado.</p>
+          ) : (
+            projects.map((project) => (
+              <CardProject
+                key={project.title}
+                linkGitHub={project.links.github}
+                linkDemo={project.links.demo}
+                title={project.title}
+                desc={project.description}
+                img={project.img}
+              />
+            ))
+          )}
+        </div>
+      )}
     </section>
   );
 };

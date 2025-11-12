@@ -1,6 +1,7 @@
 $tablet-size: 768px;
 $laptop-small-size: 1024px;
-$desktop-size: 1366px;
+$desktop-small-size: 1366px;
+$desktop-size: 1720px;
 
 .about {
   display: flex;
@@ -8,10 +9,10 @@ $desktop-size: 1366px;
   justify-content: center;
   align-items: center;
   padding: 10rem 2rem 0 2rem;
-  
+
   #content {
     width: 100%;
-    
+
     h2 {
       font-size: 1.6rem;
       color: #fff;
@@ -58,7 +59,7 @@ $desktop-size: 1366px;
     flex-direction: row;
     align-items: flex-start;
     padding: 8rem 0 0 2rem;
-    
+
     #content {
       width: 40%;
       h2 {
@@ -68,7 +69,7 @@ $desktop-size: 1366px;
         font-size: 1.1rem;
       }
     }
-  
+
     #skills {
       display: flex;
       flex-direction: column;
@@ -84,7 +85,7 @@ $desktop-size: 1366px;
     flex-direction: row;
     align-items: flex-start;
     padding: 10rem 0 0 10rem;
-    
+
     #content {
       width: 40%;
       h2 {
@@ -94,17 +95,49 @@ $desktop-size: 1366px;
         font-size: 1.1rem;
       }
     }
-  
+
     #skills {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       width: 60%;
       padding-left: 5rem;
-  
+
       #skills-grid {
         display: grid;
         grid-template-columns: auto auto auto;
+        grid-auto-flow: row;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $desktop-small-size) {
+  .about {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10rem 0 0 10rem;
+
+    #content {
+      width: 40%;
+      h2 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1.1rem;
+      }
+    }
+
+    #skills {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 60%;
+      padding-left: 10rem;
+
+      #skills-grid {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
         grid-auto-flow: row;
       }
     }
@@ -116,7 +149,7 @@ $desktop-size: 1366px;
     flex-direction: row;
     align-items: flex-start;
     padding: 10rem 0 0 10rem;
-    
+
     #content {
       width: 40%;
       h2 {
@@ -126,13 +159,19 @@ $desktop-size: 1366px;
         font-size: 1.1rem;
       }
     }
-  
+
     #skills {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       width: 60%;
       padding-left: 10rem;
+
+      #skills-grid {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        grid-auto-flow: row;
+      }
     }
   }
 }

@@ -9,6 +9,29 @@ $desktop-size: 1520px;
   padding: 8rem 0 0 2rem;
   height: max-content;
 
+  .loading-message,
+  .error-message {
+    padding: 2rem;
+    margin: 2rem 0;
+    border-radius: 8px;
+    text-align: center;
+
+    p {
+      font-size: 1.2rem;
+      margin: 0;
+    }
+  }
+
+  .loading-message {
+    background-color: rgba(100, 149, 237, 0.1);
+    color: #6495ed;
+  }
+
+  .error-message {
+    background-color: rgba(220, 53, 69, 0.1);
+    color: #dc3545;
+  }
+
   #projects {
     width: fit-content;
     display: grid;
@@ -31,7 +54,6 @@ $desktop-size: 1520px;
 }
 
 @media screen and (min-width: $laptop-small-size) {
-
   .portfolio {
     padding-left: 10rem;
     height: max-content;
@@ -42,7 +64,6 @@ $desktop-size: 1520px;
   }
 }
 @media screen and (min-width: $laptop-medium-size) {
-
   .portfolio {
     padding-left: 10rem;
     height: max-content;
