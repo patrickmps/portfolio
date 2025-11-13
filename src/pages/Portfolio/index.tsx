@@ -1,3 +1,4 @@
+import IncluVisaoLogo from "src/assets/incluvisao-logo.png";
 import { CardProject } from "../../components/CardProject";
 import { TitleSection } from "../../components/TitleSection";
 import { useGitHubRepos } from "../../hooks/useGitHubRepos";
@@ -26,7 +27,7 @@ export const Portfolio = () => {
             linkGitHub="https://github.com/restic36/aplicacao-acessiblidade-pos-front"
             title="IncluVisão"
             desc="Aplicativo mobile desenvolvido com React Native (via Expo), focado em acessibilidade para terminais POS (Point of Sale, ou Ponto de Venda). O objetivo é proporcionar uma experiência inclusiva e segura para pessoas cegas ou com baixa visão durante o uso de maquininhas de cartão, com ênfase na inserção do PIN através de feedback auditivo."
-            img="src/assets/incluvisao-logo.png"
+            img={IncluVisaoLogo}
           />
           {projects.length === 0 ? (
             <p>Nenhum projeto encontrado.</p>
