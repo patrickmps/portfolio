@@ -1,3 +1,4 @@
+$large-phone-size: 420px;
 $tablet-size: 768px;
 $laptop-small-size: 1024px;
 $desktop-small-size: 1366px;
@@ -9,6 +10,7 @@ $desktop-size: 1720px;
   justify-content: center;
   align-items: center;
   padding: 10rem 2rem 0 2rem;
+  height: auto;
 
   #content {
     width: 100%;
@@ -54,6 +56,15 @@ $desktop-size: 1720px;
   }
 }
 
+@media screen and (min-width: $large-phone-size) {
+  .about {
+    #skills {
+      #skills-grid {
+        grid-template-columns: auto auto auto;
+      }
+    }
+  }
+}
 @media screen and (min-width: $tablet-size) {
   .about {
     flex-direction: row;
@@ -76,6 +87,9 @@ $desktop-size: 1720px;
       align-items: flex-start;
       width: 60%;
       padding-left: 5rem;
+      #skills-grid {
+        grid-template-columns: auto auto;
+      }
     }
   }
 }
